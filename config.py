@@ -5,7 +5,8 @@ class Config(object):
 
     DEBUG = False
     TESTING = False
-    
+    ENV = 'testing'
+
     basedir    = os.path.abspath(os.path.dirname(__file__))
 
     SECRET_KEY = 'sujithmannarkkad'
