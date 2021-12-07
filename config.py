@@ -22,7 +22,14 @@ class Config(object):
 
 
 class ProductionConfig(Config):
-    pass
+    DEBUG = True
+
+    DB_NAME = "production-db"
+    DB_USERNAME = "root"
+    DB_PASSWORD = "sujithmannarkkad"
+
+    UPLOADS = "/home/username/app/app/static/uploads"
+    SESSION_COOKIE_SECURE = False
 
 class DevelopmentConfig(Config):
     DEBUG = True
@@ -47,4 +54,11 @@ class TestingConfig(Config):
 
  
 class DebugConfig(Config):
-    DEBUG = False
+    DEBUG = True
+
+    DB_NAME = "production-db"
+    DB_USERNAME = "root"
+    DB_PASSWORD = "sujithmannarkkad"
+
+    UPLOADS = "/home/username/app/app/static/uploads"
+    SESSION_COOKIE_SECURE = False
