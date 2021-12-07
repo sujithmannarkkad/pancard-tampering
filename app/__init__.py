@@ -1,7 +1,7 @@
 from flask import Flask
 
 app = Flask(__name__)
-
+print('Environment is ',app.config["ENV"])
 if app.config["ENV"] == "production":
     app.config.from_object("config.ProductionConfig")
 elif app.config["ENV"] == "testing":
