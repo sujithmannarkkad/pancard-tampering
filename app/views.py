@@ -15,6 +15,8 @@ app.config['GENERATED_FILE'] = 'app/static/generated'
 # Route to home page
 @app.route("/", methods=["GET", "POST"])
 def index():
+	
+	print('view file call success')
 
 	# Execute if request is get
 	if request.method == "GET":
